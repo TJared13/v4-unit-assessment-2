@@ -12,3 +12,213 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 175vh;
+    width: 100%;
+}
+
+header {
+    padding: 0px 20px;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+h2 .gallery{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+
+
+ol {
+    padding-left: 20px;
+}
+
+main {
+    padding: 75px 150px;
+}
+
+article {
+    margin-right: 400px;
+    font-family: 'Nunito', sans-serif;
+}
+
+br {
+    content: 'A';
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+footer{
+    height: 5vh;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    background-color: rgb(42, 171, 226);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18;
+font-weight: bolder;
+color: rgb(42, 171, 226);
+}
+
+.nav-text {
+    margin: 0px 25px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.nav-text:hover {
+    cursor: pointer;
+    color: rgb(42, 171, 226);
+}
+/* .side-box { */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+/* } */
+
+.profile-box {
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    right: 150px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: rgba(102, 75, 75, .3) 0px 0px 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-content: center; */
+}
+
+.profile {
+    height: 150px;
+    width: 150px;
+}
+
+.profile-name {
+    padding-right: 50px;
+}
+
+.article-box {
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+    box-shadow: rgba(102, 75, 75, .3) 0px 0px 15px 5px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 150px;
+    top: 400px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    box-shadow: rgba(102, 75, 75, .3) 0px 0px 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.articles {
+    padding-bottom: 10px;
+}
+
+.articles:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.gallery-titles  {
+    margin-top: 50px;
+    margin-right: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-larger {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: rgb(42, 171, 226);
+}
+
+.view-larger:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(27, 113, 150);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 200px;
+    width: 300px;
+    margin: 25px
+}
+
+.footer-text {
+    margin-left: 15px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    text-align: left;
+}
