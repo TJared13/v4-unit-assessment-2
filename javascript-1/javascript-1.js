@@ -292,7 +292,7 @@ function teachTrick(trick){
 */
 
 //CODE HERE
- let teachStay = teachTrick.bind('stay')
+ let teachStay = teachTrick.bind(fido, 'stay')
   
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -305,7 +305,7 @@ function teachTrick(trick){
 //CODE HERE
 
 function dogIntro(treat, toy){
-    return `${name} is a ${breed} that loves ${treat} and their ${toy}!`
+    return `${this.name} is a ${this.breed} that loves ${treat} and their ${toy}!`
 }
 
 /*
@@ -316,7 +316,8 @@ function dogIntro(treat, toy){
 
 //CODE HERE
   
-dogIntro.apply(treat, toy)
+const fidoIntro = dogIntro.apply(fido, ['chicken', 'tennis ball'])
+
 ////////////////////PROBLEM 15////////////////////
 /*
     Write a constructor function called Phone.
@@ -363,6 +364,7 @@ function Phone(brand, model, storage, color, sold) {
 //CODE HERE
 
 Phone.prototype.sell = function(){
-    this.sold = true;
-    return this.brand + this.model + ' has been sold.'
+    if (this.sold = true) {
+    return `${this.brand} + ${this.model} +  has been sold.`
+    }
 }
